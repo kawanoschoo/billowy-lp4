@@ -1,0 +1,54 @@
+// フォント
+// 筆記体（仮）
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
+    // font-family: 'Dancing Script', cursive;
+
+// 明朝体
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700&display=swap');
+    // font-family: 'Noto Serif JP', serif;
+
+// クレーOne
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap');
+    // font-family: 'Klee One', cursive;
+
+// ZEN角
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap');
+    // font-family: 'Zen Kaku Gothic New', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDPMincho:wght@400;700&display=swap');
+// font-family: 'BIZ UDPMincho', serif;
+
+// Zen Old Mincho
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700&display=swap');
+// font-family: 'Zen Old Mincho', serif;
+
+// 数字用
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap');
+// font-family: 'Lora', serif;
+
+// カラー
+// $back_color :#00355e;
+// $back_color :#2F4565;
+$color_1 :#6ba1a3;
+$color_2 :#638eab;
+$white: #fffdf9;
+$black:#5c5c5c;
+$gray:#8e8e8e;
+$title: #a4a4a4;
+
+
+//画面サイズ定義
+$breakpoints: (
+    'pc': 'screen and (min-width: 1000px)',
+    'tb': 'screen and (max-width: 999px) and (min-width: 561px)',
+    // 'sm': 'screen and (max-width: 600px)',
+    'sp': 'screen and (max-width: 560px)',
+) !default;
+//mediaクエリと結合
+@mixin mq($breakpoint){
+    @media #{map-get($breakpoints, $breakpoint)}{
+        @content;
+    }
+}
