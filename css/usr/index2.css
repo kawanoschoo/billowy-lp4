@@ -311,9 +311,9 @@ img {
   margin-top: 15px;
 }
 .sp-display .container .sale .sale-flex img {
-  width: 100px;
-  height: 274px;
-  min-width: 100px;
+  width: 67px;
+  height: 207px;
+  min-width: 33px;
   rotate: -5deg;
   filter: brightness(1.2);
 }

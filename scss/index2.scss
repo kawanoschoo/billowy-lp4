@@ -338,10 +338,17 @@ img{
                 display: flex;
                 justify-content: space-around;
                 margin-top: 15px;
+                // ★img {
+                //     width: 100px;
+                //     height: 274px;
+                //     min-width: 100px;
+                //     rotate: -5deg;
+                //     filter: brightness(1.2);
+                // }
                 img {
-                    width: 100px;
-                    height: 274px;
-                    min-width: 100px;
+                    width: 67px;
+                    height: 207px;
+                    min-width: 33px;
                     rotate: -5deg;
                     filter: brightness(1.2);
                 }
